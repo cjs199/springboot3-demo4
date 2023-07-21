@@ -1,0 +1,20 @@
+scanclass: true
+
+spring:
+  jpa:
+    show-sql: true
+  data: 
+    redis:
+      host: 192.168.2.5
+      database: 3
+      port: 6379
+      jedis:
+        pool:
+          max-idle: 16
+          max-active: 64
+          min-idle: 4      
+  datasource:
+    url: jdbc:mysql://192.168.2.5:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
